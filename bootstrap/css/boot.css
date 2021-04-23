@@ -1,0 +1,102 @@
+			body
+			{
+				background-image: url('../../imgs/10.jpg');
+				background-repeat: no-repeat; 
+				background-attachment: fixed; 
+				background-size: 100% 100%;
+			}
+			.circle {
+				width: 15px;
+				height: 15px;
+				/*border: solid 3px #089ea6;*/
+				border: solid 3px #0bb732;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				padding-bottom: 3em;
+				animation:spin 1s linear;
+			}
+			.circlebig {
+				width: 25px;
+				height: 25px;
+				border: solid 5px #ef7b09;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				padding-bottom: 5em;
+				margin-bottom: -5%;
+				margin-top: -5%;
+			}
+			.myrow
+			{
+				margin: 1%;
+				margin-top: 15%;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: #ccc;
+				border-top-left-radius: 45px;
+				border-bottom-right-radius: 45px;
+				box-shadow: 10px 1px 48px 1px #177cee;
+				//box-shadow: 10px 1px 48px 1px #e67e22;
+			}
+			.messages
+			{
+				text-align: center;
+				margin-top: 25px;
+			}
+			.s_row
+			{
+				padding-top: 9%;
+				text-align: center;
+				color: #dd4c39;
+				//animation:spin 1s linear;
+			}
+			@keyframes spin
+			{
+				50% { -webkit-transform: rotate(180deg); transform:rotate(180deg); }
+				50% { -webkit-transform: rotate(180deg); transform:rotate(180deg); }
+			}
+			.b_row
+			{
+				animation-name: b_row;
+				animation-duration: 1s;
+			}
+			@keyframes b_row {
+				from {
+					transform: scale3d(1, 1, 1);
+				}
+
+				10%, 20% {
+					transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+				}
+
+				30%, 50%, 70%, 90% {
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+				}
+
+				40%, 60%, 80% {
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+				}
+
+				to {
+					transform: scale3d(1, 1, 1);
+				}
+			}
+			input[type="file"]
+			{
+				display: none;
+			}
+			.custom-file-upload
+			{
+				color: #ccc;
+				border: 1px solid #ccc;
+				display: inline-block;
+				padding: 6px 12px;
+				cursor: pointer;
+			}
+			.submit, .select
+			{
+				color: #ccc;
+				background-color: rgba(0, 0, 0, 0);
+				border: 1px solid #ccc;
+				padding: 6px 12px;
+			}
